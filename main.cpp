@@ -7,8 +7,12 @@ using namespace std;
 int main()
 {
   Maze h;
-  h.setCapacityX(20);
-  h.setCapacityY(10);
+  h.setCapacityX(5);
+  h.setCapacityY(5);
   h.create();
   h.print();
+  //h.testr();
+  h.maze_generate();
+  //h.testr();
+  //h.print();
 }

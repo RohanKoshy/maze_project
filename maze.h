@@ -1,6 +1,8 @@
 #ifndef MAZE_H
 #define MAZE_H
 #include <iostream>
+#include <stack>
+#include <stdlib.h>
 
 class Maze
 {
@@ -10,6 +12,7 @@ class Maze
     void print();
     void setCapacityX(int x);
     void setCapacityY(int y);
+    void testr();
 
     private:
     struct Node
@@ -18,6 +21,7 @@ class Maze
         char* down;
         char* left;
         char* right;
+        bool visited=false;
         Node* t;
         Node* d;
         Node* l;
@@ -27,5 +31,8 @@ class Maze
     Node* start;
     int CAPACITY_X;
     int CAPACITY_Y;
+    Node* Cpath(Node* t);
+    int Rnumber(int d);
+    void teststack(std::stack <Node*> m);
 };
 #endif
