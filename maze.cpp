@@ -128,7 +128,7 @@ void Maze::maze_generate()
     Node* q=start;
     while(visit!=(CAPACITY_X*CAPACITY_Y))
     {
-        cout<<"visit: "<<visit<<endl;
+        //cout<<"visit: "<<visit<<endl;
         if(q->visited==false)
         {
             vis.push(q);
@@ -161,7 +161,7 @@ void Maze::maze_generate()
            }
         }
         q=temp;
-        this->print();
+        //this->print();
     }
 }
 
